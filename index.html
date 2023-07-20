@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redireccionar a index.php</title>
+</head>
+<body>
+    <h1>Redireccionando a index.php...</h1>
+
+    <!-- Formulario que enviará la solicitud POST a index.php -->
+    <form id="redirectForm" action="index.php" method="post">
+        <!-- Puedes agregar campos ocultos si deseas enviar datos adicionales al archivo index.php -->
+        <!-- Ejemplo: <input type="hidden" name="nombre" value="John Doe"> -->
+    </form>
+
+    <!-- Script que enviará el formulario automáticamente al cargar la página -->
+    <script>
+        document.getElementById('redirectForm').submit();
+    </script>
+</body>
+</html>
